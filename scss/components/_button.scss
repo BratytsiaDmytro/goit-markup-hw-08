@@ -1,0 +1,59 @@
+.button {
+        display: block;
+        border: none;
+        border-radius: 4px;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        background-color: var(--color-action-primery);
+        color: var(--color-light-primery);
+        cursor: pointer;
+        
+}
+
+.button-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: var(--color-light-primery);
+        border-color: rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: fill 250ms var(--timing);
+
+        &:focus,
+        &:hover {
+                fill: var(--color-action-primery);
+        }
+}
+
+.filter__button {
+        padding: 6px 22px;
+        border-radius: 4px;
+        border: none;
+
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        letter-spacing: 0.03em;
+        background-color: var(--color-light-secondary);
+        cursor: pointer;
+        transition: color 250ms var(--timing), background-color 250ms var(--timing),
+                box-shadow 250ms var(--timing);
+
+&:hover, &:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                        0px 2px 2px rgba(0, 0, 0, 0.12);
+        background-color: var(--color-action-primery);
+        color: var(--color-light-primery);
+}
+}
