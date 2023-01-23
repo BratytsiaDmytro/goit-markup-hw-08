@@ -1,12 +1,16 @@
 .examples-section {
     display: none;
 
-    // padding-top: 0;
-    // padding-bottom: 94px;
+    padding-top: 0;
+    padding-bottom: 94px;
 
-    // &__title {
-    //     margin-bottom: 50px;
-    // }
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
 }
 
 .examples-list {

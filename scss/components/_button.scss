@@ -57,15 +57,29 @@
         }
 }
 
-.page-header__button {
+.menu-toggle {
         position: absolute;
         top: 10px;
         right: 15px;
-        padding: 12px 8px;
-        border: none;
+        min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0;
         background-color: transparent;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        outline: none;
 
         @media screen and (min-width: 768px) {
+                display: none;
+        }
+
+        &__icon-close {
                 display: none;
         }
 }

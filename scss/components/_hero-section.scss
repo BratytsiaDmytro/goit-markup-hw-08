@@ -1,6 +1,6 @@
 .hero-section {
     padding: 118px 0;
-    // max-width: 1600px;
+
     margin: 0 auto;
     background-color: var(--color-dark-primery);
     color: var(--color-light-primery);
@@ -9,19 +9,29 @@
     background-position: center;
     background-size: cover;
 
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
+
     &__title {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
         padding: 0;
         width: 360px;
-        // width: 696px;
+
         font-weight: 900;
         font-size: 26px;
         line-height: (42 / 26);
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+
+        @media screen and (min-width: 1200px) {
+            width: 696px;
+            font-size: 44px;
+            line-height: (60 / 44);
+        }
     }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -39,6 +49,19 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         & {
             background-image: url(../images/header-768@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        & {
+            max-width: 1600px;
+            background-image: url(../images/header-1200@1x.jpg);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        & {
+            background-image: url(../images/header-1200@2x.jpg);
         }
     }
 }
