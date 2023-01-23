@@ -8,15 +8,26 @@
     line-height: calc(33 / 28);
 }
 
-.team-list {
-    // display: flex;
-    // gap: 30px;
+@media screen and (min-width: 768px) {
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+        // gap: 30px;
+    }
 }
 
 .team-list__item {
+    margin: 0 auto 30px auto;
+    width: 450px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-light-primery);
+
+    @media screen and (min-width: 768px) {
+        margin: 15px;
+        width: 354px;
+    }
 }
 
 .team-list__desc {

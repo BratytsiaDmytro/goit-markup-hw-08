@@ -18,22 +18,28 @@
         // width: 696px;
         font-weight: 900;
         font-size: 26px;
-        line-height: 26 / 42;
+        line-height: (42 / 26);
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
     }
-}
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero-section {
-        background-image: url(../images/header-480@2x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        & {
+            background-image: url(../images/header-480@2x.jpg);
+        }
     }
-}
 
-@media screen and (min-width: 768px) {
-    .hero-section {
-        background-image: url(../images/header-768@1x.jpg);
+    @media screen and (min-width: 768px) {
+        & {
+            background-image: url(../images/header-768@1x.jpg);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        & {
+            background-image: url(../images/header-768@2x.jpg);
+        }
     }
 }
 

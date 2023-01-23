@@ -7,6 +7,10 @@
         // display: flex;
 }
 
+.footer-tablet {
+        display: flex;
+}
+
 .address {
         // width: 231px;
 }
@@ -131,6 +135,12 @@
         border-radius: 4px;
         background-color: inherit;
         color: var(--color-light-primery);
+
+        @media screen and (min-width: 768px) {
+                width: 450px;
+                margin-left: 151px;
+                margin-right: 137px;
+        }
 }
 
 .subscribe-form__button {
@@ -138,7 +148,8 @@
         // display: inline-flex;
         justify-content: center;
         align-items: center;
-        margin-left: 12px;
+        margin: 0 auto;
+        // margin-left: 12px;
         width: 200px;
         height: 50px;
 
