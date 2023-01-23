@@ -4,14 +4,16 @@
 }
 
 .page-footer__container {
-        display: flex;
+        // display: flex;
 }
 
 .address {
-        width: 231px;
+        // width: 231px;
 }
 
 .address__logo {
+        display: flex;
+        justify-content: center;
         margin-bottom: 20px;
 }
 
@@ -19,26 +21,29 @@
         color: var(--color-light-primery);
 }
 
-.list {}
-
-.address-list {}
-
-.address-list .item +.item {
-        margin-top: 9px;
+.address-wrap {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 60px;
 }
 
-.address-list__item {}
+.address-list .item + .item {
+        margin-top: 9px;
+}
 
 .address-list__link {
         font-style: normal;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
+
         color: var(--color-light-primery);
         transition: color 250ms var(--timing);
 
-        &:hover, &:focus {
-            color: var(--color-action-primery);
+        &:hover,
+        &:focus {
+                color: var(--color-action-primery);
         }
 }
 
@@ -47,7 +52,8 @@
 }
 
 .social-contact {
-        margin-left: 70px;
+        margin-bottom: 60px;
+        // margin-left: 70px;
 }
 
 .social-contact__title {
@@ -58,8 +64,8 @@
         line-height: calc(16 / 14);
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: center;
 }
-
 
 // .social-list {
 //         display: flex;
@@ -94,9 +100,8 @@
 //         height: 20px;
 // }
 
-
 .subscribe {
-        margin-left: 93px;
+        // margin-left: 93px;
 }
 
 .subscribe__text {
@@ -106,17 +111,20 @@
         line-height: calc(16 / 14);
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: center;
         color: var(--color-light-primery);
 }
 
 .subscribe-form {
-        display: flex;
-        justify-content: end;
+        // display: flex;
+        // justify-content: end;
 }
 
 .subscribe-form__input {
+        margin-bottom: 20px;
         padding-left: 16px;
-        width: 358px;
+        width: 100%;
+        // width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -126,7 +134,8 @@
 }
 
 .subscribe-form__button {
-        display: inline-flex;
+        display: flex;
+        // display: inline-flex;
         justify-content: center;
         align-items: center;
         margin-left: 12px;

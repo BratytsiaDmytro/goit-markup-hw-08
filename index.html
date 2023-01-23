@@ -61,6 +61,11 @@
             >
           </li>
         </ul>
+        <button class="page-header__button" type="button">
+          <svg width="24" height="16">
+            <use href="./images/icon/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main -->
@@ -163,9 +168,16 @@
           <ul class="list team-list">
             <li class="team-list__item item">
               <img
-                src="./images/team1.jpg"
+                srcset="
+              ./images/team-270 1.jpg 270w, 
+              ./images/team-354 1.jpg 354w, 
+              ./images/team-450 1.jpg 450w, 
+              ./images/team-540 1.jpg 540w, 
+              ./images/team-708 1.jpg 708w,
+              ./images/team-900 1.jpg 900w/>"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/team-450 1.jpg"
                 alt="Продакт дизайнер"
-                width="270"
               />
               <div class="team-list__desc">
                 <h3 class="team-list__subtitle">Ігор Дем'яненко</h3>
@@ -224,9 +236,16 @@
             </li>
             <li class="team-list__item">
               <img
-                src="./images/team2.jpg"
+                srcset="
+              ./images/team-270 2.jpg 270w, 
+              ./images/team-354 2.jpg 354w, 
+              ./images/team-450 2.jpg 450w, 
+              ./images/team-540 2.jpg 540w, 
+              ./images/team-708 2.jpg 708w,
+              ./images/team-900 2.jpg 900w/>"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/team-450 2.jpg"
                 alt="Фронтенд розробник"
-                width="270"
               />
               <div class="team-list__desc">
                 <h3 class="team-list__subtitle">Ольга Рєпіна</h3>
@@ -284,7 +303,18 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/team3.jpg" alt="Маркетинг" width="270" />
+              <img
+                srcset="
+              ./images/team-270 3.jpg 270w, 
+              ./images/team-354 3.jpg 354w, 
+              ./images/team-450 3.jpg 450w, 
+              ./images/team-540 3.jpg 540w, 
+              ./images/team-708 3.jpg 708w,
+              ./images/team-900 3.jpg 900w/>"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/team-450 3.jpg"
+                alt="Продакт дизайнер"
+              />
               <div class="team-list__desc">
                 <h3 class="team-list__subtitle">Микола Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -341,7 +371,18 @@
               </div>
             </li>
             <li class="team-list__item item">
-              <img src="./images/team4.jpg" alt="Дизайнер" width="270" />
+              <img
+                srcset="
+              ./images/team-270 4.jpg 270w, 
+              ./images/team-354 4.jpg 354w, 
+              ./images/team-450 4.jpg 450w, 
+              ./images/team-540 4.jpg 540w, 
+              ./images/team-708 4.jpg 708w,
+              ./images/team-900 4.jpg 900w/>"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/team-450 4.jpg"
+                alt="Продакт дизайнер"
+              />
               <div class="team-list__desc">
                 <h3 class="team-list__subtitle">Михайло Єрмаков</h3>
                 <p class="team-list__text">UI Designer</p>
@@ -458,7 +499,7 @@
           <a class="logo address__logo" href="/"
             >Web<span class="logo logo--light">Studio</span></a
           >
-          <address>
+          <address class="address-wrap">
             <ul class="list address-list">
               <li class="address-list__item item">
                 <a
@@ -546,7 +587,7 @@
       </div>
     </footer>
     <!-- Modal section -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" data-modal-close type="button">
           <svg width="18px" height="18px">
@@ -621,7 +662,7 @@
           <button class="button modal-button" type="submit">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>

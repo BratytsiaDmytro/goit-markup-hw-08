@@ -1,29 +1,39 @@
 .hero-section {
-    padding: 200px 0;
-    max-width: 1600px;
+    padding: 118px 0;
+    // max-width: 1600px;
     margin: 0 auto;
     background-color: var(--color-dark-primery);
     color: var(--color-light-primery);
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/background.jpg);
+    background-image: url(../images/header-480@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     &__title {
         margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 30px;
-            padding: 0;
-            width: 696px;
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 1.4;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+        margin-right: auto;
+        margin-bottom: 30px;
+        padding: 0;
+        width: 360px;
+        // width: 696px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 26 / 42;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: url(../images/header-480@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-section {
+        background-image: url(../images/header-768@1x.jpg);
     }
 }
 
@@ -33,7 +43,8 @@
     margin-right: auto;
     transition: background-color 250ms var(--timing);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: var(--color-action-secondary);
     }
 }

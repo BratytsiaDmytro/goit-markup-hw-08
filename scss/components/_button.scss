@@ -10,7 +10,6 @@
         background-color: var(--color-action-primery);
         color: var(--color-light-primery);
         cursor: pointer;
-        
 }
 
 .button-close {
@@ -47,13 +46,22 @@
         letter-spacing: 0.03em;
         background-color: var(--color-light-secondary);
         cursor: pointer;
-        transition: color 250ms var(--timing), background-color 250ms var(--timing),
-                box-shadow 250ms var(--timing);
+        transition: color 250ms var(--timing), background-color 250ms var(--timing), box-shadow 250ms var(--timing);
 
-&:hover, &:focus {
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        &:hover,
+        &:focus {
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
                         0px 2px 2px rgba(0, 0, 0, 0.12);
-        background-color: var(--color-action-primery);
-        color: var(--color-light-primery);
+                background-color: var(--color-action-primery);
+                color: var(--color-light-primery);
+        }
 }
+
+.page-header__button {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        padding: 12px 8px;
+        border: none;
+        background-color: transparent;
 }

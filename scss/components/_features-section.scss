@@ -1,14 +1,15 @@
 .features-list {
-    display: flex;
-    padding: 0;
+    // display: flex;
+    // padding: 0;
 }
 
-.features-list .item+.item {
-    margin-left: 30px;
-}
+// .features-list .item + .item {
+//     margin-left: 30px;
+// }
 
-.features__item {
-    width: 270px;
+.features-list__item {
+    // width: 270px;
+    margin-bottom: 30px;
 }
 
 .features-list__item::before {
@@ -50,6 +51,7 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .features-list__text {
